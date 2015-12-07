@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "40db3839_6043ec96",
+        "filename": "lib/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1015378
+      },
+      "writtenOn": "2015-12-07T21:04:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "40db3839_401b50be",
+      "revId": "177876a6f06deeb8001b1112a5dafa9b7f22bb6b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e0b50cdb_5da7afce",
         "filename": "lib/Android.mk",
         "patchSetId": 1
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "60e03ce1_c4d4d213",
+        "filename": "lib/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1015378
+      },
+      "writtenOn": "2015-12-07T21:04:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e0b50cdb_5da7afce",
+      "revId": "177876a6f06deeb8001b1112a5dafa9b7f22bb6b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "00e5c0f2_de566150",
         "filename": "lib/Android.mk",
         "patchSetId": 1
@@ -47,6 +83,24 @@
       "writtenOn": "2015-12-07T19:29:19Z",
       "side": 1,
       "message": "Same as L22.\n\nNit: keep the host libraries next to each other?",
+      "revId": "177876a6f06deeb8001b1112a5dafa9b7f22bb6b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "20eac4c4_5f9def87",
+        "filename": "lib/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1015378
+      },
+      "writtenOn": "2015-12-07T21:04:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "00e5c0f2_de566150",
       "revId": "177876a6f06deeb8001b1112a5dafa9b7f22bb6b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
