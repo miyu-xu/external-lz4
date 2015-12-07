@@ -6,5 +6,25 @@ liblz4_src_files := lz4.c lz4hc.c lz4frame.c xxhash.c
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := liblz4
+LOCAL_MULTILIB := both
 LOCAL_SRC_FILES := $(liblz4_src_files)
 include $(BUILD_HOST_STATIC_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := liblz4
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := $(liblz4_src_files)
+include $(BUILD_STATIC_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := liblz4
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := $(liblz4_src_files)
+include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := liblz4
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := $(liblz4_src_files)
+include $(BUILD_HOST_SHARED_LIBRARY)
