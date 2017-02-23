@@ -1,3 +1,4 @@
+<<<<<<< HEAD   (d69e5b Merge commit 'f68eead36c0eb8f6f4e5c912dfe204c52bb7b7c5' to a)
 LZ4 Library
 Copyright (c) 2011-2014, Yann Collet
 All rights reserved.
@@ -22,3 +23,20 @@ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
 ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+=======
+This repository uses 2 different licenses :
+- all files in the `lib` directory use a BSD 2-Clause license
+- all other files use a GPLv2 license, unless explicitly stated otherwise
+
+Relevant license is reminded at the top of each source file,
+and with the presence of COPYING or LICENSE file.
+
+This model emphasizes the fact that
+only files in the `lib` directory are designed to be included into 3rd party projects.
+
+Other files, such as those from `programs` or `examples` directory,
+are not intended to be compiled outside of their context.
+They can serve as source of inspiration,
+but they should not be copy/pasted into 3rd party projects,
+as this scenario is not supported.
+>>>>>>> BRANCH (7bb64f Merge pull request #297 from lz4/dev)
