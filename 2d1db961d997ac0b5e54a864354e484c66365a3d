@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "277b6665_afa7d9e2",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1133857
+      },
+      "writtenOn": "2017-02-24T19:14:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "55969af2_a5ad8857",
+      "revId": "2d1db961d997ac0b5e54a864354e484c66365a3d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a55f3f85_7a76d90a",
         "filename": "LICENSE",
         "patchSetId": 4
@@ -30,6 +48,30 @@
       "writtenOn": "2017-02-24T17:10:47Z",
       "side": 1,
       "message": "This license is not what upstream has in the new version. Would probably make sense to change the tag to GPL\n\nThey say:\n\nBSD-2 for lib/*\nGPLv2 for everything else.",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 11
+      },
+      "revId": "2d1db961d997ac0b5e54a864354e484c66365a3d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "eddee6f3_6f01813f",
+        "filename": "LICENSE",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1133857
+      },
+      "writtenOn": "2017-02-24T19:14:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a55f3f85_7a76d90a",
       "range": {
         "startLine": 1,
         "startChar": 0,
