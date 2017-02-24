@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "55969af2_a5ad8857",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1077068
+      },
+      "writtenOn": "2017-02-24T17:16:54Z",
+      "side": 1,
+      "message": "Bug: 35355363",
+      "revId": "2d1db961d997ac0b5e54a864354e484c66365a3d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a55f3f85_7a76d90a",
         "filename": "LICENSE",
         "patchSetId": 4
