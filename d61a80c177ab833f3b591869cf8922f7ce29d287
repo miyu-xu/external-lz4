@@ -22,6 +22,30 @@
       "revId": "d61a80c177ab833f3b591869cf8922f7ce29d287",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4a5ec698_3719bbb0",
+        "filename": "LICENSE",
+        "patchSetId": 11
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1133857
+      },
+      "writtenOn": "2017-03-02T03:50:30Z",
+      "side": 1,
+      "message": "I\u0027d prefer to update it on top of this merge commit since 97df1c97 is not part of the 1.7.5 tag.",
+      "parentUuid": "adee73fc_52502318",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 4
+      },
+      "revId": "d61a80c177ab833f3b591869cf8922f7ce29d287",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
