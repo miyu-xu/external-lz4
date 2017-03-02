@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "bccd040e_5dde97a9",
+        "filename": "NOTICE",
+        "patchSetId": 8
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1133857
+      },
+      "writtenOn": "2017-03-02T00:36:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "03c74bd0_a7a6cb09",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 1
+      },
+      "revId": "1c44db77b00bc81442581e7208738c88ec560a0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "21d9b6d9_6a06ce73",
         "filename": "lib/NOTICE",
         "patchSetId": 8
@@ -36,6 +60,30 @@
       "writtenOn": "2017-03-02T00:28:36Z",
       "side": 1,
       "message": "Upstream has a lib/LICENSE file with the text they wanted and you should leave it untouched.\n\nWe need a lib/NOTICE file, which can be just a symlink to \"LICENSE\" since the lib/LICENSE has the appropriate text.",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 11
+      },
+      "revId": "1c44db77b00bc81442581e7208738c88ec560a0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b8cad562_431b9023",
+        "filename": "lib/NOTICE",
+        "patchSetId": 8
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1133857
+      },
+      "writtenOn": "2017-03-02T00:36:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "21d9b6d9_6a06ce73",
       "range": {
         "startLine": 1,
         "startChar": 0,
