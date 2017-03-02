@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "adee73fc_52502318",
+        "filename": "LICENSE",
+        "patchSetId": 11
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1077068
+      },
+      "writtenOn": "2017-03-02T03:13:13Z",
+      "side": 1,
+      "message": "This LICENSE file is the one in 1.7.5; we need to update past 97df1c9789cbc8a7891cadbd49ea5053574e2f72",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 4
+      },
+      "revId": "d61a80c177ab833f3b591869cf8922f7ce29d287",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
