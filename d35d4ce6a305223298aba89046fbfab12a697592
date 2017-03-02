@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "354acd97_d8ab091e",
+        "filename": "lib/LICENSE",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1133857
+      },
+      "writtenOn": "2017-03-02T00:50:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "51139d13_08450a7e",
+      "revId": "d35d4ce6a305223298aba89046fbfab12a697592",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9dec9cd9_aff8c49b",
         "filename": "lib/NOTICE",
         "patchSetId": 9
@@ -30,6 +48,30 @@
       "writtenOn": "2017-03-02T00:41:38Z",
       "side": 1,
       "message": "Should point to \"LICENSE\" (on this directory) not the top directory \"LICENSE\".",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 3
+      },
+      "revId": "d35d4ce6a305223298aba89046fbfab12a697592",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cc009cc6_c0caf85f",
+        "filename": "lib/NOTICE",
+        "patchSetId": 9
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1133857
+      },
+      "writtenOn": "2017-03-02T00:50:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9dec9cd9_aff8c49b",
       "range": {
         "startLine": 1,
         "startChar": 0,
