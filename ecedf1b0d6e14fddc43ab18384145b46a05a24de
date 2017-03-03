@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "532b77ee_f5c679d8",
+        "filename": "NEWS",
+        "patchSetId": 12
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1077068
+      },
+      "writtenOn": "2017-03-03T22:36:01Z",
+      "side": 1,
+      "message": "This file indicates that you are merging in the \"1.7.5\" tag, but the LICENSE file in the top directory is NOT what the \"1.7.5\" release had. Don\u0027t do this.\n\n\"git merge 97df1c9789cbc8a7891cadbd49ea5053574e2f72\" instead of 1.7.5. I know 97df1c9789cbc8a7891cadbd49ea5053574e2f72 is not a \"release\" but as we discussed we want to update to a version at or past this CL to get the right license text.",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 6
+      },
+      "revId": "ecedf1b0d6e14fddc43ab18384145b46a05a24de",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
