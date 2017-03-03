@@ -22,6 +22,30 @@
       "revId": "ecedf1b0d6e14fddc43ab18384145b46a05a24de",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba926e2f_c2f22149",
+        "filename": "NEWS",
+        "patchSetId": 12
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1133857
+      },
+      "writtenOn": "2017-03-03T22:49:05Z",
+      "side": 1,
+      "message": "Commit \"97df1c9789c\" (updated LICENSE) is currently on the \"dev\" branch of the upstream. I don\u0027t want to merge to a untagged point from a dev branch. So either we cherry-pick the change or wait till that change gets included to a release on master. I\u0027ll check with OSPO again.",
+      "parentUuid": "532b77ee_f5c679d8",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 6
+      },
+      "revId": "ecedf1b0d6e14fddc43ab18384145b46a05a24de",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
