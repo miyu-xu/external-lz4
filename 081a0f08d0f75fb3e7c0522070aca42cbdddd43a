@@ -33,6 +33,23 @@
       "message": "i still think it\u0027s weird to not take into account that we\u0027re not using the GPL stuff, but given that this doesn\u0027t actually affect dependencies, i don\u0027t think it matters in practice...",
       "revId": "081a0f08d0f75fb3e7c0522070aca42cbdddd43a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9da79b78_835847a6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1359095
+      },
+      "writtenOn": "2021-01-23T23:02:56Z",
+      "side": 1,
+      "message": "Voting -1 on Open-Source-Licensing until Dash approves.",
+      "revId": "081a0f08d0f75fb3e7c0522070aca42cbdddd43a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
