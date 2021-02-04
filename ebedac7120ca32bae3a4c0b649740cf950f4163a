@@ -22,6 +22,30 @@
       },
       "revId": "ebedac7120ca32bae3a4c0b649740cf950f4163a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "20b149be_990e64f6",
+        "filename": "programs/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1359095
+      },
+      "writtenOn": "2021-02-04T19:38:06Z",
+      "side": 1,
+      "message": "Because it has more than 1 license kind.",
+      "parentUuid": "bb68778c_8510d7ff",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 31
+      },
+      "revId": "ebedac7120ca32bae3a4c0b649740cf950f4163a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
