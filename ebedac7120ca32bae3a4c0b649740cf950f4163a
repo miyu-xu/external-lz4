@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bb68778c_8510d7ff",
+        "filename": "programs/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2021-02-04T17:40:33Z",
+      "side": 1,
+      "message": "why does this get a comment, when i\u0027ve seen others that don\u0027t?\n\nit would be good if the script said what it\u0027s unconvinced about. (since this seems correct as-is to me, and the comment should just be deleted?)",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 31
+      },
+      "revId": "ebedac7120ca32bae3a4c0b649740cf950f4163a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
