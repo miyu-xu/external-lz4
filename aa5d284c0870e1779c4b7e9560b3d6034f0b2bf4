@@ -18,6 +18,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2a6982f4_386029de",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1121838
+      },
+      "writtenOn": "2021-04-29T18:57:54Z",
+      "side": 1,
+      "message": "yes I need lz4 specifically.\n\nDo you want me to add a regular cc_binary? I can definitely do that",
+      "parentUuid": "295e21cb_cd01788b",
+      "revId": "aa5d284c0870e1779c4b7e9560b3d6034f0b2bf4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ae119da3_4669763c",
