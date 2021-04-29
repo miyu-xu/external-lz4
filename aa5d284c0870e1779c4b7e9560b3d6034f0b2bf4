@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "295e21cb_cd01788b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2021-04-29T16:15:07Z",
+      "side": 1,
+      "message": "i\u0027m assuming you need lz4 specifically? otherwise just use bzip2 or gzip.\n\nbut assuming you do specifically need lz4, just add it normally...",
+      "revId": "aa5d284c0870e1779c4b7e9560b3d6034f0b2bf4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ae119da3_4669763c",
+        "filename": "programs/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2021-04-29T16:15:07Z",
+      "side": 1,
+      "message": "so use cc_binary and call it lz4? (that\u0027s what we\u0027ve done with things like bzip2. this doesn\u0027t seem any different?)",
+      "range": {
+        "startLine": 33,
+        "startChar": 3,
+        "endLine": 33,
+        "endChar": 21
+      },
+      "revId": "aa5d284c0870e1779c4b7e9560b3d6034f0b2bf4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
