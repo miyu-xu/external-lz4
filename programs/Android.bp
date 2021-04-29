@@ -1,7 +1,8 @@
 // Copyright (C) 2016 The Android Open Source Project
 
-cc_binary_host {
+cc_binary {
     name: "lz4",
+    host_supported: true,
     srcs: [
         "datagen.c",
         "bench.c",
@@ -10,7 +11,11 @@ cc_binary_host {
     ],
     cflags: ["-Wall", "-Werror"],
     static_libs: ["liblz4"],
-    stl: "libc++_static",
+    target: {
+        host: {
+            stl: "libc++_static",
+        },
+    },
 }
 
 cc_binary_host {
