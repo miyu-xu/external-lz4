@@ -72,6 +72,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "dbf59e8d_b8388e45",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1002751
+      },
+      "writtenOn": "2021-04-29T19:51:46Z",
+      "side": 1,
+      "message": "It\u0027s trying to find a 32-bit version of the binary to go with the 32-bit version of the test.  Try adding compile_multilib: \"first\" to the test.",
+      "parentUuid": "7a7b931a_d36b2323",
+      "revId": "aa5d284c0870e1779c4b7e9560b3d6034f0b2bf4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ae119da3_4669763c",
