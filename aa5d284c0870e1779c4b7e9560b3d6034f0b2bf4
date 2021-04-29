@@ -90,6 +90,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3153012d_a50e5752",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1121838
+      },
+      "writtenOn": "2021-04-29T20:04:28Z",
+      "side": 1,
+      "message": "So why doesn\u0027t the binary not have a 32-bit version? Shouldn\u0027t I add compile_multilib: \"both\" to the binary instead?",
+      "parentUuid": "dbf59e8d_b8388e45",
+      "revId": "aa5d284c0870e1779c4b7e9560b3d6034f0b2bf4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ae119da3_4669763c",
