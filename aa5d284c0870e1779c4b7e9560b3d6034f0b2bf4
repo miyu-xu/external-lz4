@@ -126,6 +126,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "51b67860_febb813a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1002751
+      },
+      "writtenOn": "2021-04-29T20:08:24Z",
+      "side": 1,
+      "message": "Tests have different install directories for 32/64 bit, binaries all go in bin/.  If you add compile_multilib: \"both\" here you\u0027ll also have to give the installed binaries different names, for example with:\n\nmulilib: {\n    lib32: {\n        suffix: \"_32\",\n    },\n    lib64: {\n        suffix: \"_64\",\n    },\n},\n\nthat tends to cause trouble for users of the binary, as they need to know whether it is called lz4_32 or lz4_64.\n\nWe use a separate config test_suites_x86 and test_suites_x86_64, so compile_multilib: \"first\" should do the right thing in both cases.",
+      "parentUuid": "75b648d0_8ea7bd27",
+      "revId": "aa5d284c0870e1779c4b7e9560b3d6034f0b2bf4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ae119da3_4669763c",
