@@ -29,3 +29,25 @@ cc_binary_host {
     static_libs: ["liblz4"],
     stl: "libc++_static",
 }
+
+// This is not a test. This is the lz4 binary for other cc_test's to depend on.
+// Include it like this:
+// cc_test {
+//    // ...
+//    data: [":lz4_for_test"],
+// }
+cc_test {
+    name: "lz4_for_test",
+    stem: "lz4",
+    gtest: false,
+    // host should use lz4
+    host_supported: false,
+    srcs: [
+        "datagen.c",
+        "bench.c",
+        "lz4io.c",
+        "lz4cli.c",
+    ],
+    cflags: ["-Wall", "-Werror"],
+    static_libs: ["liblz4"],
+}
