@@ -54,6 +54,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7a7b931a_d36b2323",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1121838
+      },
+      "writtenOn": "2021-04-29T19:03:45Z",
+      "side": 1,
+      "message": "ccross@\n\nIf I use a regular cc_binary, then I encounter this error:\n\nerror: test/vts-testcase/kernel/gki/Android.bp:19:1: dependency \"lz4\" of \"vts_gki_release_test\" missing variant:\n  os:android,image:,arch:x86_silvermont_silvermont,sdk:\navailable variants:\n  os:linux_glibc,arch:x86_64\n  os:windows,arch:x86\n  os:android,image:,arch:x86_64_silvermont (alias to os:android,image:,arch:x86_64_silvermont,sdk:)\n  os:android,image:,arch:x86_64_silvermont,sdk:\n\nSo, either I do this (Patchset 1), or I somehow fix this error, or I install lz4 to the device properly (base_system.mk).\n\nColin, any suggestions?",
+      "parentUuid": "523f80ba_a4caa031",
+      "revId": "aa5d284c0870e1779c4b7e9560b3d6034f0b2bf4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ae119da3_4669763c",
