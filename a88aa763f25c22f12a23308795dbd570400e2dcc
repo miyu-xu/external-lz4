@@ -16,6 +16,24 @@
       "message": "hmm... i didn\u0027t realize that the *tool* is GPL... i assume you *need* lz4 and can\u0027t use gzip or bzip2 or zstd?\n\n(it\u0027s weird that only the command-line tool is GPL and the library is BSD --- why would they do that? but it does mean that we could write a BSD replacement for the tool. or you could just link the library into whatever your calling code is and call the library directly.)",
       "revId": "a88aa763f25c22f12a23308795dbd570400e2dcc",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "59b0d78d_d914549a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1121838
+      },
+      "writtenOn": "2021-04-30T01:44:51Z",
+      "side": 1,
+      "message": "\u003e i assume you *need* lz4 and can\u0027t use gzip or bzip2 or zstd?\n\nThe ramdisk is packaged with lz4 oh host, so when I decompress it I have to use lz4 as well.\n\nI could try adding gzip and bzip2 and zstd and see if the test still passes, though.\n\n\u003e or you could just link the library into whatever your calling code is and call the library directly\n\nI tried `LZ4_decompress_safe` but no luck:\n\nhttps://android-review.googlesource.com/c/platform/test/vts-testcase/kernel/+/1690405/1/gki/gki_release_test.cpp#111\n\nI think the lz4 program also reads some header of the file etc.?",
+      "parentUuid": "c4ec9878_73a469f8",
+      "revId": "a88aa763f25c22f12a23308795dbd570400e2dcc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
