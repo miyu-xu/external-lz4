@@ -34,6 +34,24 @@
       "parentUuid": "c4ec9878_73a469f8",
       "revId": "a88aa763f25c22f12a23308795dbd570400e2dcc",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3666265b_a14df9ae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1121838
+      },
+      "writtenOn": "2021-04-30T03:36:44Z",
+      "side": 1,
+      "message": "I double checked that gzip and bzip2 on the device doesn\u0027t work; it says:\n\n\u003e gzip: not gzip\n\nor\n\n\u003e bzip2: ramdisk is not a bzip2 file.\n\nzstd is not built or installed on the device.\n\nhttps://cs.android.com/android/platform/superproject/+/master:external/zstd/Android.bp\n\nSo, should I revert to Patchset 1 and use cc_test? Then I can ensure it is not installed on the device.\n\nMy last resort is to convert the whole test into a host (Java) test and package the host-side lz4 in the test package; that would need a bit more work though, so I don\u0027t want to do it unless that\u0027s the only option.",
+      "parentUuid": "59b0d78d_d914549a",
+      "revId": "a88aa763f25c22f12a23308795dbd570400e2dcc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
