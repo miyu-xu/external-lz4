@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c4ec9878_73a469f8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2021-04-30T01:29:47Z",
+      "side": 1,
+      "message": "hmm... i didn\u0027t realize that the *tool* is GPL... i assume you *need* lz4 and can\u0027t use gzip or bzip2 or zstd?\n\n(it\u0027s weird that only the command-line tool is GPL and the library is BSD --- why would they do that? but it does mean that we could write a BSD replacement for the tool. or you could just link the library into whatever your calling code is and call the library directly.)",
+      "revId": "a88aa763f25c22f12a23308795dbd570400e2dcc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
