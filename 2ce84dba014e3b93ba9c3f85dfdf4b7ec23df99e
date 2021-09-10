@@ -16,6 +16,24 @@
       "message": "I notice there is a tmp file and a tmpsparse file. Did you mean to check those in? There is no .gitignore rule to ignore those, but it seems suspicious that they should be checked in.",
       "revId": "2ce84dba014e3b93ba9c3f85dfdf4b7ec23df99e",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "20588538_15968b10",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2021-09-10T22:04:55Z",
+      "side": 1,
+      "message": "seems like we might be missing a commit? locally:\n```\nenh-p920.mtv:~/aosp/external/lz4$ git log tmp\ncommit 849ebae524c85c102aad9b085c6725bd20de6a32\nAuthor: Yann Collet \u003ccyan@fb.com\u003e\nDate:   Sat Nov 14 10:52:19 2020 -0800\n\n    fixed force --sparse mode\nenh-p920.mtv:~/aosp/external/lz4$ \n```\n\nif i `git clone` directly from github:\n```\n/tmp/lz4$ git log --follow -- tmp\ncommit e6ee895204f1fd8bcbd31315a347dac86286469d\nAuthor: aqrit \u003cvippor_cs@yahoo.com\u003e\nDate:   Tue Nov 17 17:53:28 2020 -0500\n\n    Delete tmp\n\ncommit 849ebae524c85c102aad9b085c6725bd20de6a32\nAuthor: Yann Collet \u003ccyan@fb.com\u003e\nDate:   Sat Nov 14 10:52:19 2020 -0800\n\n    fixed force --sparse mode\n/tmp/lz4$ \n```\n\noh, wait... v1.9.3 is _between_ those. so if you look at github _for this release_ those files really are there: https://github.com/lz4/lz4/tree/d44371841a2f1728a3f36839fd4b7e872d0927d3\n\nso weird (and well spotted!), but seems to be WAI until they put out another release...",
+      "parentUuid": "232af586_9b62127d",
+      "revId": "2ce84dba014e3b93ba9c3f85dfdf4b7ec23df99e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
