@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "232af586_9b62127d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1019050
+      },
+      "writtenOn": "2021-09-10T21:20:50Z",
+      "side": 1,
+      "message": "I notice there is a tmp file and a tmpsparse file. Did you mean to check those in? There is no .gitignore rule to ignore those, but it seems suspicious that they should be checked in.",
+      "revId": "2ce84dba014e3b93ba9c3f85dfdf4b7ec23df99e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
