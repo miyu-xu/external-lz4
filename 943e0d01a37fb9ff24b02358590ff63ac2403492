@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cbfd0295_05a0d5e3",
+        "filename": "BUILD",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1087303
+      },
+      "writtenOn": "2024-02-01T18:49:41Z",
+      "side": 1,
+      "message": "Please fix this WARNING reported by ComplianceLint: PackageHasDefaultApplicableLicenses\n\nAnalyzer Description: Reports third party compliance warnings. go/compliancelint\nOwner: opensource-compliance-team@google.com\n\nPackageHasDefaultApplicableLicenses\nEach BUILD file needs a package definition which should include a default_applicable_licenses field\n\n📖 See go/compliancelint-checks#PackageHasDefaultApplicableLicenses",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 0
+      },
+      "revId": "943e0d01a37fb9ff24b02358590ff63ac2403492",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
