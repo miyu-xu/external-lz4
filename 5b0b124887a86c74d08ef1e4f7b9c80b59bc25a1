@@ -34,6 +34,42 @@
       ],
       "revId": "5b0b124887a86c74d08ef1e4f7b9c80b59bc25a1",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "92638b45_8571c485",
+        "filename": "MODULE.bazel",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1561731
+      },
+      "writtenOn": "2025-03-20T22:06:21Z",
+      "side": 1,
+      "message": "Fix applied.",
+      "parentUuid": "5e51a8f3_0e49c8b6",
+      "revId": "5b0b124887a86c74d08ef1e4f7b9c80b59bc25a1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "30eafccf_45c0ca71",
+        "filename": "MODULE.bazel",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1561731
+      },
+      "writtenOn": "2025-03-20T22:06:21Z",
+      "side": 1,
+      "message": "Fix applied.",
+      "parentUuid": "5e51a8f3_0e49c8b6",
+      "revId": "5b0b124887a86c74d08ef1e4f7b9c80b59bc25a1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
