@@ -1,0 +1,39 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5e51a8f3_0e49c8b6",
+        "filename": "MODULE.bazel",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1125918
+      },
+      "writtenOn": "2025-03-20T22:01:29Z",
+      "side": 1,
+      "message": "According to our METADATA file it should be 1.9.4",
+      "fixSuggestions": [
+        {
+          "fixId": "bbb282e0_01b4cfb2",
+          "description": "prompt_to_edit API",
+          "replacements": [
+            {
+              "path": "MODULE.bazel",
+              "range": {
+                "startLine": 3,
+                "startChar": 0,
+                "endLine": 4,
+                "endChar": 0
+              },
+              "replacement": "    version \u003d \"1.9.4\",\n"
+            }
+          ]
+        }
+      ],
+      "revId": "5b0b124887a86c74d08ef1e4f7b9c80b59bc25a1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
