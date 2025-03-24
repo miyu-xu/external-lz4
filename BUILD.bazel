@@ -1,5 +1,5 @@
+load("@rules_cc//cc:cc_library.bzl", "cc_library")
 load("@rules_license//rules:license.bzl", "license")
-load("@rules_license//rules:license_kind.bzl", "license_kind")
 
 package(
     default_applicable_licenses = [":license"],
@@ -9,28 +9,31 @@ package(
 license(
     name = "license",
     license_kinds = [
-        ":SPDX-license-identifier-BSD-2.0",
-     ],
-    license_text = "lib/LICENSE",
+        "@rules_license//licenses/spdx:BSD-2-Clause",
+    ],
+    license_text = "LICENSE",
     visibility = [":__subpackages__"],
-)
-
-license_kind(
-    name = "SPDX-license-identifier-BSD-2.0",
-    conditions = ["notice"],
-    url = "https://spdx.org/licenses/BSD-2-Clause.html",
 )
 
 cc_library(
     name = "lz4",
-    srcs = glob(["lib/*.c"]),
-    hdrs = glob([
-        "lib/*.h",
-    ]) + ["lib/lz4.c"],
-    copts = [
-        "-O3",
-        "-fno-delete-null-pointer-checks",
+    srcs = [
+        "lib/lz4.c",
+        "lib/lz4file.c",
+        "lib/lz4frame.c",
+        "lib/lz4hc.c",
+        "lib/xxhash.c",
     ],
+    hdrs = [
+        "lib/lz4.c",
+        "lib/lz4.h",
+        "lib/lz4file.h",
+        "lib/lz4frame.h",
+        "lib/lz4frame_static.h",
+        "lib/lz4hc.h",
+        "lib/xxhash.h",
+    ],
+    copts = ["-fno-delete-null-pointer-checks"],
     includes = ["lib"],
     licenses = ["LICENSE"],
     visibility = ["//visibility:public"],
