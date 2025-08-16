@@ -13,10 +13,13 @@ Please note:
 
 ## What's the point of this example?
 
-- Handle huge file in small amount of memory
-- Always better compression ratio than Block API
-- Uniform block size
+The LZ4 Streaming API can be used to handle compressing a huge file in a small
+amount of memory. This example shows how to use a "Double Buffer" to compress
+blocks (i.e. chunks) of a uniform size in a stream. The Streaming API used in
+this way *always* yields a better compression ratio than the regular Block API.
 
+For an example with non-uniform blocks, see ["LZ4 Streaming API Example: Line by
+Line Text Compression"](blockStreaming_lineByLine.md).
 
 ## How compression works
 
