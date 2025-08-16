@@ -1,28 +1,28 @@
-﻿# LZ4 Streaming API Example : Double Buffer
+﻿# LZ4 Streaming API Example: Double Buffer
 by *Takayuki Matsuoka*
 
-`blockStreaming_doubleBuffer.c` is an example of the LZ4 Streaming API where we
-implement double buffer (de)compression.
+[`blockStreaming_doubleBuffer.c`](blockStreaming_doubleBuffer.c) is an example
+of the LZ4 Streaming API where we implement double buffer (de)compression.
 
-Please note :
+Please note:
 
- - Firstly, read "LZ4 Streaming API Basics".
- - This is a relatively advanced application example.
- - The output file is not compatible with lz4frame and is platform dependent.
+- Firstly, read ["LZ4 Streaming API Basics"](streaming_api_basics.md).
+- This is a relatively advanced application example.
+- The output file is not compatible with lz4frame and is platform dependent.
 
 
-## What's the point of this example ?
+## What's the point of this example?
 
- - Handle huge file in small amount of memory
- - Always better compression ratio than Block API
- - Uniform block size
+- Handle huge file in small amount of memory
+- Always better compression ratio than Block API
+- Uniform block size
 
 
 ## How compression works
 
 Firstly, allocate "Double Buffer" for input and "compressed data buffer" for
-output. Double buffer has two pages, the "first" page (Page#1) and the "second"
-page (Page#2).
+output. Double buffer has two pages, the "first" page (`Page#1`) and the "second"
+page (`Page#2`).
 
 ```
         Double Buffer
@@ -40,7 +40,7 @@ Next, read the first block to the double buffer's first page. Compress it with
 `LZ4_compress_continue()`. On the first compression, LZ4 doesn't have any
 previous dependencies, so it just compresses the block without dependencies and
 writes the compressed block `{Out#1}` to the compressed data buffer. After that,
-write {Out#1} to the file.
+write `{Out#1}` to the file.
 
 ```
       Prefix Dependency
@@ -56,7 +56,7 @@ write {Out#1} to the file.
 ```
 
 Next, read the second block to the double buffer's second page and compress it.
-This time, LZ4 can use the dependency on Block#1 to improve the compression
+This time, LZ4 can use the dependency on `Block#1` to improve the compression
 ratio. This dependency is called "Prefix mode".
 
 ```
@@ -96,11 +96,11 @@ Continue this procedure till the end of the file.
 
 Decompression follows the reverse order:
 
- - Read the first compressed block.
- - Decompress it to the first page and write that page to the file.
- - Read the second compressed block.
- - Decompress it to the second page and write that page to the file.
- - Read the third compressed block.
- - Decompress it to the *first* page and write that page to the file.
+- Read the first compressed block.
+- Decompress it to the first page and write that page to the file.
+- Read the second compressed block.
+- Decompress it to the second page and write that page to the file.
+- Read the third compressed block.
+- Decompress it to the *first* page and write that page to the file.
 
 Continue this procedure till the end of the compressed file.
