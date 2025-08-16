@@ -32,10 +32,16 @@ Double buffer has two pages, "first" page (Page#1) and "second" page (Page#2).
          |
          v
       {Out#1}
+```
 
+Next, read first block to double buffer's first page. And compress it by `LZ4_compress_continue()`.
+For the first time, LZ4 doesn't know any previous dependencies,
+so it just compress the line without dependencies and generates compressed block {Out#1} to LZ4 compressed data buffer.
+After that, write {Out#1} to the file.
 
+```
       Prefix Dependency
-         +---------+
+
          |         |
          v         |
     +---------+----+----+
@@ -44,8 +50,13 @@ Double buffer has two pages, "first" page (Page#1) and "second" page (Page#2).
                    |
                    v
                 {Out#2}
+```
 
+Next, read second block to double buffer's second page. And compress it.
+This time, LZ4 can use dependency to Block#1 to improve compression ratio.
+This dependency is called "Prefix mode".
 
+```
    External Dictionary Mode
          +---------+
          |         |
@@ -56,8 +67,13 @@ Double buffer has two pages, "first" page (Page#1) and "second" page (Page#2).
          |
          v
       {Out#3}
+```
 
+Next, read third block to double buffer's *first* page, and compress it.
+Also this time, LZ4 can use dependency to Block#2.
+This dependency is called "External Dictonaly mode".
 
+```
       Prefix Dependency
          +---------+
          |         |
@@ -69,19 +85,6 @@ Double buffer has two pages, "first" page (Page#1) and "second" page (Page#2).
                    v
                 {Out#4}
 ```
-
-Next, read first block to double buffer's first page. And compress it by `LZ4_compress_continue()`.
-For the first time, LZ4 doesn't know any previous dependencies,
-so it just compress the line without dependencies and generates compressed block {Out#1} to LZ4 compressed data buffer.
-After that, write {Out#1} to the file.
-
-Next, read second block to double buffer's second page. And compress it.
-This time, LZ4 can use dependency to Block#1 to improve compression ratio.
-This dependency is called "Prefix mode".
-
-Next, read third block to double buffer's *first* page, and compress it.
-Also this time, LZ4 can use dependency to Block#2.
-This dependency is called "External Dictonaly mode".
 
 Continue these procedure to the end of the file.
 
