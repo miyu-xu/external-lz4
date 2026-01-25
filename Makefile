@@ -63,7 +63,7 @@ lz4 lz4-release :
 	echo lz4 build completed
 
 .PHONY: examples
-examples: liblz4.a
+examples: lib
 	$(MAKE) -C $(EXDIR) all
 
 .PHONY: manuals
