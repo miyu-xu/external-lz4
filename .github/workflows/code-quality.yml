@@ -102,4 +102,4 @@ jobs:
         type c++ && which c++ && c++ --version
 
     - name: Build examples
-      run: make V=1 clean examples
+      run: make V=1 examples
