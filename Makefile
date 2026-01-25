@@ -75,6 +75,7 @@ build_tests:
 	$(MAKE) -C $(TESTDIR) all
 
 .PHONY: clean
+clean: MAKEFLAGS= --no-print-directory
 clean:
 	$(MAKE) -C $(LZ4DIR) $@ > $(VOID)
 	$(MAKE) -C $(PRGDIR) $@ > $(VOID)
