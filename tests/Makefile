@@ -238,6 +238,10 @@ test-lz4-skippable: lz4
 	@echo "\n ---- test lz4 with skippable frames ----"
 	./test-lz4-skippable.sh
 
+test-datagen-invalid-input: datagen
+	@echo "\n ---- test datagen fails correctly on invalid input ----"
+	$(DATAGEN) -g1234l && exit 1 || true
+
 test-lz4-basic: lz4 datagen unlz4 lz4cat
 	@echo "\n ---- test lz4 basic compression/decompression ----"
 	./test-lz4-basic.sh
@@ -264,9 +268,9 @@ test-lz4-opt-parser: lz4 datagen
 	@echo "\n ---- test opt-parser ----"
 	./test-lz4-opt-parser.sh
 
-test-lz4-essentials : lz4 datagen test-lz4-basic test-lz4-multiple test-lz4-multiple-legacy \
-                      test-lz4-frame-concatenation test-lz4-testmode \
-                      test-lz4-contentSize test-lz4-dict
+test-lz4-essentials : lz4 datagen test-datagen-invalid-input test-lz4-basic test-lz4-multiple \
+                      test-lz4-multiple-legacy test-lz4-frame-concatenation \
+                      test-lz4-testmode test-lz4-contentSize test-lz4-dict
 
 test-lz4: lz4 datagen test-lz4-essentials test-lz4-opt-parser \
           test-lz4-sparse test-lz4-hugefile test-lz4-dict \
