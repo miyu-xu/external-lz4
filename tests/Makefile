@@ -66,10 +66,12 @@ all32: CFLAGS+=-m32
 all32: all
 
 .PHONY: lz4
+lz4: MAKEFLAGS=
 lz4:
 	$(MAKE) -C $(PRGDIR) $@ CFLAGS="$(CFLAGS)"
 
 .PHONY: lib liblz4.pc
+lib liblz4.pc: MAKEFLAGS=
 lib liblz4.pc:
 	CFLAGS="$(CFLAGS)" $(MAKE) -C $(LIBDIR) $@
 
@@ -77,6 +79,7 @@ lz4c unlz4 lz4cat: lz4
 	$(LN_SF) $(LZ4) $(PRGDIR)/$@
 
 .PHONY: lz4c32
+lz4c32: MAKEFLAGS=
 lz4c32:  # create a 32-bits version for 32/64 interop tests
 	$(MAKE) -C $(PRGDIR) $@ CFLAGS="-m32 $(CFLAGS)"
 
@@ -89,6 +92,7 @@ fullbench : CPPFLAGS += -DNDEBUG
 $(eval $(call c_program,fullbench,fullbench.o lz4.o lz4hc.o lz4frame.o xxhash.o))
 
 .PHONY: $(LIBDIR)/liblz4.a
+$(LIBDIR)/liblz4.a: MAKEFLAGS=
 $(LIBDIR)/liblz4.a:
 	$(MAKE) -C $(LIBDIR) liblz4.a
 
@@ -103,6 +107,7 @@ ifeq ($(WINBASED),yes)
 CLEAN += fullbench-dll
 fullbench-dll : DEBUGLEVEL=0
 fullbench-dll : CPPFLAGS += -DNDEBUG
+fullbench-dll : MAKEFLAGS=
 fullbench-dll: fullbench.c $(LIBDIR)/xxhash.c
 	$(MAKE) -C $(LIBDIR) liblz4
 	$(CC) $(ALLFLAGS) $^ -o $@$(EXT) -DLZ4_DLL_IMPORT=1 $(LIBDIR)/dll/$(LIBLZ4).dll
