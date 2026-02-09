@@ -39,6 +39,8 @@ build_script:
       copy tests\fullbench.c bin\example\ &&
       copy lib\xxhash.* bin\example\ &&
       copy lib\lz4*.h bin\include\ &&
+      copy programs\platform.h bin\include\ &&
+      copy programs\util.h bin\include\ &&
       copy lib\liblz4.a bin\static\liblz4_static.lib &&
       copy lib\liblz4.dll* bin\dll\ >nul 2>&1 &&
       copy lib\*.dll bin\dll\ >nul 2>&1 &&
