@@ -42,8 +42,8 @@ build_script:
       copy programs\platform.h bin\include\ &&
       copy programs\util.h bin\include\ &&
       copy lib\liblz4.a bin\static\liblz4_static.lib &&
-      copy lib\liblz4.dll* bin\dll\ >nul 2>&1 &&
-      copy lib\*.dll bin\dll\ >nul 2>&1 &&
+      copy lib\liblz4.dll.a bin\dll\ &&
+      copy lib\liblz4.dll bin\dll\ || copy lib\msys-lz4-1.dll bin\dll\liblz4.dll || copy lib\cyglz4-1.dll bin\dll\liblz4.dll &&
       copy lib\dll\example\* bin\example\ >nul 2>&1 &&
       copy programs\lz4.exe bin\lz4.exe &&
       copy tests\*.exe programs\
