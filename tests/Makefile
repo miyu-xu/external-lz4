@@ -201,6 +201,8 @@ test32: test
 
 test-amalgamation: lz4_all.o
 
+lz4_all.o: CFLAGS += -Werror -std=c90
+
 CLEAN += lz4_all.c
 lz4_all.c: $(LIBDIR)/lz4.c $(LIBDIR)/lz4hc.c $(LIBDIR)/lz4frame.c
 	$(CAT) $^ > $@
