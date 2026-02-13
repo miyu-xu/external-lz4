@@ -33,13 +33,11 @@ build_script:
       make -j -C programs lz4 V=1 &&
       make -j -C tests fullbench V=1 &&
       make -j -C tests fuzzer V=1 &&
-      make -j -C lib lib V=1 &&
+      make -j -C lib lib V=1 LDFLAGS="-static-libgcc" &&
       echo "Packaging GCC build..." &&
       mkdir bin\dll bin\static bin\example bin\include &&
       copy tests\fullbench.c bin\example\ &&
       copy lib\xxhash.* bin\example\ &&
-      copy lib\lz4*.h bin\include\ &&
-      copy programs\platform.h bin\include\ &&
       copy programs\util.h bin\include\ &&
       copy lib\liblz4.a bin\static\liblz4_static.lib &&
       copy lib\liblz4.dll.a bin\dll\ &&
